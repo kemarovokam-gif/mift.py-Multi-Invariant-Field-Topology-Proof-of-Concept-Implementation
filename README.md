@@ -4,22 +4,22 @@ Here’s a polished, professional README draft for your mift.py repository. I st
 
 
 
-Multi-Invariant Field Topology (MIFT) — Proof-of-Concept Implementation
+Multi-Invariant Field Topology (MIFT) Proof-of-Concept Implementation
 
 Author: Kemar Armando Morrison, MBUT Architect
 Year: 2025
-Framework: MIFT (M, F, G, I) — Identity-preserving field dynamics with topological and resonance constraints
+Framework: MIFT (M, F, G, I)  Identity-preserving field dynamics with topological and resonance constraints
 
 
 
 Overview
 
 The Multi-Invariant Field Topology (MIFT) framework formalizes identity-preserving dynamics on field configurations. This repository implements the full MIFT system as described in Morrison (2025), including:
-	•	MIFT system components (M, F, G, I) — Definition of discrete fields, admissible transformations, and invariants
-	•	Identity classes and distances — Determine when two field configurations belong to the same invariant-based identity
+	•	MIFT system components (M, F, G, I)  Definition of discrete fields, admissible transformations, and invariants
+	•	Identity classes and distances  Determine when two field configurations belong to the same invariant-based identity
 	•	Identity-preserving dynamics — Gradient flows constrained to MIFT identity manifolds (IDIG)
-	•	NIR resonance kernel — Non-isotropic, pairwise resonance constraints for stabilizing fields
-	•	Topological examples — Winding numbers, topological charges, and entropy-invariant demonstrations
+	•	NIR resonance kernel  Non-isotropic, pairwise resonance constraints for stabilizing fields
+	•	Topological examples Winding numbers, topological charges, and entropy-invariant demonstrations
 
 This implementation enables practical experimentation, visualization, and empirical validation of MIFT principles, bridging theoretical topology and field dynamics.
 
@@ -35,7 +35,7 @@ Features
 	•	MeanInvariant — Spatial mean
 	•	SpectralCentroidInvariant — Frequency centroid
 	•	WindingNumberInvariant — Phase wrapping on discrete circles
-	•	TopologicalChargeInvariant — 1-D topological charge
+	•	TopologicalChargeInvariant  1-D topological charge
 	•	EntropyInvariant — Shannon entropy of |φ|²
 	3.	IDIG Flow
 	•	Identity-preserving gradient descent
