@@ -63,7 +63,7 @@ pip install numpy matplotlib
 
 Clone the repository:
 
-git clone https://github.com/yourusername/mift-poc.git
+git clone https://github.com/kemarovokam-gif/mift-poc.git
 cd mift-poc
 
 
