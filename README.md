@@ -1,122 +1,94 @@
-# mift.py-Multi-Invariant-Field-Topology-Proof-of-Concept-Implementation
-This MIFT (Multi-Invariant Field Topology) proof-of-concept proves a novel mathematical framework for certifying topological stability
-Here’s a polished, professional README draft for your mift.py repository. I structured it to highlight the significance of MIFT, its functionality, demos, and usage instructions:
-
-
-
-Multi-Invariant Field Topology (MIFT) Proof-of-Concept Implementation
+Quantum Brain Network Demo (QBN v7) — Absolute° Stability Framework
 
 Author: Kemar Armando Morrison, MBUT Architect
-Year: 2025
-Framework: MIFT (M, F, G, I)  Identity-preserving field dynamics with topological and resonance constraints
-
+License: GPL-2.0
 
 
 Overview
 
-The Multi-Invariant Field Topology (MIFT) framework formalizes identity-preserving dynamics on field configurations. This repository implements the full MIFT system as described in Morrison (2025), including:
-	•	MIFT system components (M, F, G, I)  Definition of discrete fields, admissible transformations, and invariants
-	•	Identity classes and distances  Determine when two field configurations belong to the same invariant-based identity
-	•	Identity-preserving dynamics — Gradient flows constrained to MIFT identity manifolds (IDIG)
-	•	NIR resonance kernel  Non-isotropic, pairwise resonance constraints for stabilizing fields
-	•	Topological examples Winding numbers, topological charges, and entropy-invariant demonstrations
+This repository demonstrates the Quantum Brain Network (QBN) v7 framework for Absolute° Stability in multi-dimensional AI and field-governed systems. The demos and scripts showcase:
+	•	Governed system stability with reproducible metrics.
+	•	Identity-preserving dynamics using the Multi-Invariant Field Topology (MIFT) framework.
+	•	Non-Isotropic Resonance (NIR) stabilisation and constrained gradient flows (IDIG).
+	•	Orthogonality of entropy and invariant-preserving identity, illustrating robust, controlled evolution of state spaces.
 
-This implementation enables practical experimentation, visualization, and empirical validation of MIFT principles, bridging theoretical topology and field dynamics.
-
+This is a proof-of-concept repository illustrating theoretical and practical aspects of QBN v7. All demos are reproducible and anchored to governance-compliant invariants.
 
 
-Features
-	1.	Core MIFT System
-	•	Evaluate invariants for any discrete field configuration
-	•	Compute identity classes and MIFT distances
-	•	Check admissibility of transformations
-	2.	Invariants Implemented
-	•	L2NormInvariant — Energy norm
-	•	MeanInvariant — Spatial mean
-	•	SpectralCentroidInvariant — Frequency centroid
-	•	WindingNumberInvariant — Phase wrapping on discrete circles
-	•	TopologicalChargeInvariant  1-D topological charge
-	•	EntropyInvariant — Shannon entropy of |φ|²
-	3.	IDIG Flow
-	•	Identity-preserving gradient descent
-	•	Tangent-space projection using nullspace of invariants
-	•	Automatic re-anchoring to prevent drift
-	4.	NIR Kernel
-	•	Sparse, non-isotropic RBF kernel for field resonance
-	•	Analytic gradient for stabilizing dynamics
-	•	Compatible with IDIG for constrained stabilization
-	5.	Tri-Layer Lyapunov
-	•	Combines energy, NIR resonance, and invariant constraints
-	•	Certificates of stability along trajectories
-	6.	Demo Experiments
-	•	Winding number preservation
-	•	Constrained energy minimization
-	•	NIR resonance stabilization
-	•	Entropy vs. identity orthogonality
+Key Features
+
+1. Multi-Invariant Field Topology (MIFT)
+	•	Implements MIFT core system (M, F, G, I) for identity-preserving dynamics.
+	•	Supports L2 Norm, Mean, Spectral Centroid, Winding Number, Topological Charge, and Entropy invariants.
+	•	Provides distance metrics, admissible transform checks, and identity-preserving trajectory evaluation.
+
+2. Identity-Constrained Gradient Flow (IDIG)
+	•	Gradient descent constrained to identity manifolds.
+	•	Preserves invariants exactly while minimising energy.
+	•	Re-anchor steps maintain high fidelity to invariant manifolds.
+
+3. Non-Isotropic Resonance Kernel (NIR)
+	•	Directional, sparse RBF kernel for resonance stabilization.
+	•	Integrated with IDIG to maintain MIFT invariants while reducing field irregularities.
+	•	Demonstrates convergence of rough fields to resonance-smooth equilibrium.
+
+4. Tri-Layer Lyapunov Functional
+	•	Combines energy and resonance contributions for a composite Lyapunov function.
+	•	Provides a certificate of stability along simulated trajectories.
+
+5. Demo Experiments
+	•	Winding Number: topological identity preservation under phase rotations.
+	•	IDIG Flow: energy minimization with invariant preservation.
+	•	NIR Stabilisation: resonance-driven smoothing of rough fields.
+	•	Entropy vs Identity: shows independence of entropy evolution from invariant-preserving dynamics.
 
 
-Installation
+Getting Started
 
-This repository requires Python 3.9+ with the following packages:
+Prerequisites
+	•	Python ≥ 3.10
+	•	numpy, matplotlib
+
+Install dependencies via:
 
 pip install numpy matplotlib
 
-Clone the repository:
 
-git clone https://github.com/kemarovokam-gif/mift-poc.git
-cd mift-poc
+Running the Demos
 
-
-Usage
-
-Run the main demo:
+The main entry point is:
 
 python mift.py
 
-This will execute all demonstration experiments:
-	1.	Winding number example
-	2.	IDIG constrained gradient flow
-	3.	NIR resonance stabilization
-	4.	Entropy vs. identity orthogonality
+This script runs all demo experiments:
+	1.	Winding Number Demo — Section 4
+	2.	IDIG Gradient Flow Demo — Section 6
+	3.	NIR Resonance Stabilisation — Section 7
+	4.	Entropy vs Identity Demo — Section 5
 
-Plots and printed summaries will illustrate energy reduction, invariant preservation, and stability certificates.
-
-
-
-Example Output
-
-DEMO 1 — Winding Number (Section 4)
-  phi_0 winding number  : 1
-  phi_2 winding number  : 2
-  Same identity class?  : False
-  MIFT distance         : 1.0000
-  g is admissible?      : True
-
-DEMO 2 — IDIG Constrained Gradient Flow
-  Initial energy        : 0.5243
-  Final energy          : 0.0018
-  Identity preserved?   : True
-  Max invariant drift   : 0.0002
-
-Visualizations are automatically generated using matplotlib with a dark theme, showing:
-	•	Energy descent
-	•	Invariant drift
-	•	NIR resonance evolution
-	•	Entropy vs identity comparisons
+Visualizations are displayed for energy descent, invariant drift, and Lyapunov stability metrics.
 
 
+Repository Structure
 
-Contribution & Extensions
+Quantum-Brain-Network-Demo/
+├── mift.py           # Main demo + POC implementation
+├── README.md         # This document
+├── LICENSE           # GPL-2.0 license
+├── EXTENDED_README.md  # Detailed theoretical notes
+├── FEATURES_README.md  # Summary of modules & invariants
+└── LIVE_PROOF_README.md # Validation results & anchoring
 
-This is a proof-of-concept implementation. Potential extensions include:
-	•	Additional invariants (e.g., higher-order moments, topological indices)
-	•	Multi-dimensional field support
-	•	GPU acceleration for large-scale simulations
-	•	Integration with swarm or agent-based systems
+
+Citation
+
+If you use this code for research, please cite:
+
+Morrison, K.A. (2025). Multi-Invariant Field Topology & Quantum Brain Network Framework (QBN v7) — Absolute° Stability Proof-of-Concept.
 
 
-
-License
-
-This repository is proprietary / internal use. Please contact the author for access or collaboration opportunities.
+Notes
+	•	This repository demonstrates reproducibility and theoretical proofs, not production-ready systems.
+	•	Designed for researchers and engineers exploring stability, identity-preserving dynamics, and topological constraints in AI fields.
+	•	Visualizations are color-coded for clarity and invariant tracking.
 
