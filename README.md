@@ -1,4 +1,4 @@
-Quantum Brain Network Demo (QBN v7) — Absolute° Stability Framework
+Quantum Brain Network Demo (QBN v7) Absolute° Stability Framework
 
 Author: Kemar Armando Morrison, MBUT Architect
 License: GPL-2.0
